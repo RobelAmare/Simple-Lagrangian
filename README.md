@@ -202,7 +202,7 @@ For an interactive environment, consider running the script in a Jupyter Noteboo
 
 ## Conclusion
 
-This project demonstrates the power and elegance of **Lagrangian mechanics** and symbolic computation using Python and SymPy. Whether you're a student, educator, or enthusiast, this tool can help you explore the beauty of classical mechanics.
+This project provides a practical demonstration of applying Lagrangian mechanics to derive the equation of motion for a simple pendulum using the symbolic capabilities of the SymPy library in Python. By automating the calculation of kinetic energy, potential energy, the Lagrangian, and the application of the Euler-Lagrange equation, the script allows users to easily trace the steps of this fundamental derivation. This serves as a valuable tool for students and enthusiasts alike to deepen their understanding of analytical mechanics and symbolic computation. The resulting equation of motion, θ¨+Lg​sin(θ)=0, is a cornerstone result in classical mechanics, and this script offers a clear path to obtaining it from first principles.
 
 **its strongly advised to use the mentioned tools to view a better output result for better visibility.
 **
