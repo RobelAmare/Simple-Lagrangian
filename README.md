@@ -206,3 +206,5 @@ This project demonstrates the power and elegance of **Lagrangian mechanics** and
 
 **its strongly advised to use the mentioned tools to view a better output result for better visibility.
 **
+
+# **the main code file can be found here**:https://github.com/RobelAmare/Simple-Lagrangian/blob/main/pendulum_lagrangian.py
