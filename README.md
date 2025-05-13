@@ -18,15 +18,13 @@ L = T - V
 
 The dynamics of the system are governed by the **Euler-Lagrange equation**:
 
-\[
-\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_i}\right) - \frac{\partial L}{\partial q_i} = 0
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/Screenshot%202025-05-13%20164833.png)
 
 Where:
-- \( q_i \): The generalized coordinates describing the system's configuration.
-- \( \dot{q}_i \): The corresponding generalized velocities.
+-  ![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/qi.png): The generalized coordinates describing the system's configuration.
+-  ![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/qi_dot.png): The corresponding generalized velocities.
 
-For a simple pendulum of mass \( m \) and length \( l \), the system can be fully described by a single generalized coordinate: the angle \( \theta \), which the pendulum makes with the vertical.
+For a simple pendulum of mass \( m \) and length \( l \), the system can be fully described by a single generalized coordinate: the angle  θ, which the pendulum makes with the vertical.
 
 ---
 
@@ -36,15 +34,13 @@ For a simple pendulum of mass \( m \) and length \( l \), the system can be full
 
 Formula:
 
-\[
-T = \frac{1}{2} m v^2
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/kinetic%20formula.png)
 
-For a simple pendulum, the velocity of the bob is \( v = l \dot{\theta} \). Substituting this into the formula gives:
+For a simple pendulum, the velocity of the bob is ![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/velocity.png). Substituting this into the formula gives:
 
-\[
-T = \frac{1}{2} m (l \dot{\theta})^2 = \frac{1}{2} m l^2 \dot{\theta}^2
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/kinetic%20energy%20second%20formula.png)
+
+---
 
 **Python Implementation:**
 
@@ -62,11 +58,10 @@ Formula:
 V = m g h
 \]
 
-Taking the pivot point as the reference level (\( h = 0 \)), the height of the bob is \( h = -l \cos(\theta) \). Substituting this gives:
+Taking the pivot point as the reference level (\( h = 0 \)), the height of the bob is ![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/height%20of%20the%20bob%20.png)
+Substituting this gives:
 
-\[
-V = -m g l \cos(\theta)
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/potential_energy.png)
 
 **Python Implementation:**
 
@@ -86,9 +81,7 @@ L = T - V
 
 Substituting the expressions for \( T \) and \( V \):
 
-\[
-L = \frac{1}{2} m l^2 \dot{\theta}^2 + m g l \cos(\theta)
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/The%20Lagrangian%20.png)
 
 **Python Implementation:**
 
@@ -102,15 +95,11 @@ L_sym = T_sym - V_sym
 
 Formula:
 
-\[
-\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\theta}}\right) - \frac{\partial L}{\partial \theta} = 0
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/Euler-Lagrangef2.png)
 
 For the simple pendulum, the generalized coordinate is \( \theta \). The equation becomes:
 
-\[
-\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\theta}}\right) - \frac{\partial L}{\partial \theta} = 0
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/for%20simple%20pendulum.png)
 
 **Python Implementation:**
 
@@ -132,15 +121,11 @@ euler_lagrange_eq_sym = d_dt_dL_d_theta_dot_sym - dL_d_theta_sym
 
 Derived from the Euler-Lagrange equation:
 
-\[
-m l^2 \ddot{\theta} + m g l \sin(\theta) = 0
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/equation%20of%20motion%20from%20euler-lagrange.png)
 
-Dividing through by \( m l^2 \) (assuming \( m, l \neq 0 \)) gives:
+Dividing through by mL² (assuming \( m, L ≠ 0 ) gives:
 
-\[
-\ddot{\theta} + \frac{g}{l} \sin(\theta) = 0
-\]
+![image](https://github.com/RobelAmare/Simple-Lagrangian/blob/main/equation%20of%20motion%20final.png)
 
 **Python Implementation:**
 
@@ -189,11 +174,11 @@ The script will display:
   - The Lagrangian (\( L \)).
   - Euler-Lagrange equation components.
   - The final equation of motion.
-- Numerical results for the angular acceleration (\( \ddot{\theta} \)) based on the provided inputs.
+- Numerical results for the angular acceleration based on the provided inputs.
 
 ---
 
-## Improving Output Readability
+## Improving Output Readability (this feature hasnt been added in this project  !!!!!!)
 
 ### 1. Generate LaTeX Output
 
@@ -218,3 +203,6 @@ For an interactive environment, consider running the script in a Jupyter Noteboo
 ## Conclusion
 
 This project demonstrates the power and elegance of **Lagrangian mechanics** and symbolic computation using Python and SymPy. Whether you're a student, educator, or enthusiast, this tool can help you explore the beauty of classical mechanics.
+
+**its strongly advised to use the mentioned tools to view a better output result for better visibility.
+**
