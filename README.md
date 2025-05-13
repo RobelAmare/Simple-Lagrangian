@@ -178,33 +178,81 @@ The script will display:
 
 ---
 
-## Improving Output Readability (this feature hasnt been added in this project  !!!!!!)
+# Improving Output Readability (this feature hasnt been added in this project  !!!!!!)
 
-### 1. Generate LaTeX Output
 
-SymPy can convert symbolic expressions into LaTeX strings using `sympy.latex()`. You can then paste these strings into a LaTeX editor or a Markdown viewer that supports LaTeX to see the properly formatted equations.
+## Overview
 
-**Example Code:**
-
-```python
-print("\n--- LaTeX Output ---")
-print("Symbolic Lagrangian (LaTeX):")
-print(sympy.latex(L_sym))
-print("\nEquation of Motion (LaTeX):")
-print(sympy.latex(equation_of_motion_sym))
-```
-
-### 2. Use Jupyter Notebook
-
-For an interactive environment, consider running the script in a Jupyter Notebook, where formulas can be rendered directly in LaTeX format.
+This step, while completely optional, may be necessary to view the code's output clearly and in a visually pleasing manner. It is included solely to demonstrate how the output can be better viewed and understood, **and it is not part of the main code itself**.
 
 ---
+
+## Running the Project in Jupyter Notebook
+
+Using Jupyter Notebook allows for enhanced output visibility, particularly for mathematical equations rendered in LaTeX format.
+
+### Prerequisites
+
+1. **Install Jupyter Notebook**
+   Ensure that you have Jupyter Notebook installed. If not, you can install it using pip:
+   ```bash
+   pip install notebook
+   ```
+
+2. **Install SymPy**
+   Ensure that the SymPy library is installed. You can install it with:
+   ```bash
+   pip install sympy
+   ```
+
+### Steps to Run the Project in Jupyter Notebook
+
+1. **Create a Jupyter Notebook File**
+   - Open your terminal or command prompt.
+   - Navigate to the directory where the project is stored.
+   - Start Jupyter Notebook by running:
+     ```bash
+     jupyter notebook
+     ```
+   - This will open a web interface in your default browser. Navigate to the directory and create a new Python notebook (`.ipynb` file).
+
+2. **Write or Copy the Code**
+   Copy the Python code from the project (e.g., `pendulum_lagrangian.py`) into a new code cell in the Jupyter Notebook.
+
+3. **Render Mathematical Outputs in LaTeX**
+   Use SymPy's `init_printing()` function to enable LaTeX rendering for mathematical expressions:
+   ```python
+   from sympy import init_printing
+   init_printing()
+   ```
+   This ensures that any symbolic outputs (e.g., equations) are displayed in beautiful LaTeX format.
+
+4. **Run the Notebook**
+   Execute the cells step-by-step to see the outputs. Ensure that the cells with mathematical formulas are properly executed to render the LaTeX-formatted equations.
+
+
+---
+
+## Benefits of Using Jupyter Notebook 
+
+1. **Improved Visualization**:
+   - Equations and outputs are rendered in a visually appealing, LaTeX-based format, making them easier to understand.
+
+2. **Interactive Exploration**:
+   - Modify inputs and observe changes in real-time within the notebook.
+
+3. **Exportability**:
+   - Extract LaTeX outputs for documentation or presentations.
+
+---
+
+
 
 ## Conclusion
 
 This project provides a practical demonstration of applying Lagrangian mechanics to derive the equation of motion for a simple pendulum using the symbolic capabilities of the SymPy library in Python. By automating the calculation of kinetic energy, potential energy, the Lagrangian, and the application of the Euler-Lagrange equation, the script allows users to easily trace the steps of this fundamental derivation. This serves as a valuable tool for students and enthusiasts alike to deepen their understanding of analytical mechanics and symbolic computation. The resulting equation of motion, θ¨+Lg​sin(θ)=0, is a cornerstone result in classical mechanics, and this script offers a clear path to obtaining it from first principles.
 
-**its strongly advised to use the mentioned tools to view a better output result for better visibility.
+**its strongly advised to use the mentioned tool to view a better output result for better visibility.
 **
 
 #### **The main code file can be found here**:       https://github.com/RobelAmare/Simple-Lagrangian/blob/main/pendulum_lagrangian.py
